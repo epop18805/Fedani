@@ -1,0 +1,79 @@
+
+body {
+	background-color: #2a4443;
+	background-size: contain;
+	background-position: left;
+	background-repeat: no-repeat;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    height: 95vh;
+    margin: 0;
+  }
+  
+/* Stilurile pentru containerul formularului */
+.container {
+    background-color: rgba(255, 255, 255, 0.8); /* Adaugăm opacitate (0.8) pentru a face formularul mai transparent */
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 60px;
+    width: 400px;
+    text-align: center;
+    margin-left:50px;
+  }
+  
+  h2 {
+    margin-top: 0;
+  }
+  
+  .form-group {
+    margin-bottom: 15px;
+    text-align: left;
+  }
+  
+  label {
+    display: block;
+    font-weight: bold;
+  }
+  
+  input,
+  select {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+  
+  button {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  button:hover {
+    background-color: #45a049;
+  }
+
+  /* Stilurile pentru centrarea formularului */
+.form-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+  }
+  
+  /* Stilurile pentru a adăuga spațiu în partea superioară a paginii */
+  .page-container {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+  }

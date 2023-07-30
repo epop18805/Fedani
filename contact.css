@@ -1,0 +1,191 @@
+body {
+	background-color: #2a4443;
+	background-size: contain;
+	background-position: left;
+	background-repeat: no-repeat;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+
+.top-banner {
+	background-color: #064e53;
+	padding: 4px;
+	text-align: center;
+	height: 100px;
+	position: relative;
+	margin: 0; /* Asigurați-vă că nu există stil de marginare */
+}
+
+  .banner-content {
+	max-width: 600px;
+	margin: 0 auto;
+  }
+  
+  .banner-content h1 {
+	margin-top: 0;
+	font-size: 18px;
+	font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+	color: #818080;  
+	text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.4);  
+  }
+  
+  .banner-content p {
+	margin: 0; /* Adăugați acest stil pentru a elimina spațiul vertical */
+	font-size: 20px;
+	font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+	color: #e0c4c4;  
+	text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
+}
+
+
+
+  header {    
+	background-color: #8a99ac;
+	margin: 0;
+	width: 100%;
+	padding: 4px;
+	text-align:left;
+	border-radius: 20px; 
+  }
+  
+  #audioPlayerContainer {
+	position: absolute;
+	top: 5px;
+	left: 0;
+	display: flex;
+	align-items: left;
+	justify-content: left;
+  }
+  
+  #audioPlayer {
+	width: 40px;
+	height:auto;
+	opacity: 0;
+	transition: width 0.3s, height 0.3s, opacity 0.3s;
+  }
+  
+  #audioPlayerContainer:hover #audioPlayer {
+	width: 100px;
+	height: 50px;
+	opacity: 1;
+  }
+  
+  .audio-play-button {
+	width: 50px;
+	height: 50px;
+	background-color: #6a87a8;
+	border-radius: 50%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	color: #8aa0b9;
+	cursor: pointer;
+  }
+  .audio-play-button {
+	width: 50px;
+	height: 50px;
+	background-color: #6a87a8;
+	border-radius: 50%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	color: #8aa0b9;
+	cursor: pointer;
+	font-size: 24px; /* Ajustează dimensiunea cheii muzicale */
+  }
+  
+  .audio-play-button::before {
+	content: "\f001"; /* Codul Unicode pentru pictograma cheii muzicale din Font Awesome */
+	font-family: "Font Awesome 5 Free";
+	font-weight: 900;
+  }
+
+
+  img {
+	width: 30%;
+	height: 75px;
+	border-radius: 10px;
+	box-shadow: 0 2px 4px rgba(0, 0, 0, 0.4);
+	transition: transform 0.3s ease;
+	margin-left: auto;
+	margin-right: auto;
+	display: block;
+}
+
+img:hover {
+	transform: scale(1.1);
+}
+
+.menu {
+	display: flex;
+	list-style-type: none;
+	padding: 20px;
+	margin: 1;
+  }
+  
+  .menu li {
+	margin-bottom: 10px;
+  }
+  
+  .menu li a {
+	text-decoration: none;
+	color: black;
+  }
+
+  .sparkle {
+	font-size: 24px;
+	color: #0e4b50;
+	text-shadow: 0 0 100px rgba(255, 255, 255, 0.8);
+	animation: sparkle 1.5s linear infinite;
+  }
+  
+  @keyframes sparkle {
+	0% {
+	  text-shadow: 0 0 10px rgba(255, 255, 255, 0.8);
+	}
+	50% {
+	  text-shadow: 0 0 20px rgba(255, 255, 255, 0.9);
+	}
+	100% {
+	  text-shadow: 0 0 10px rgba(255, 255, 255, 0.8);
+	}
+  }
+
+
+
+  .text-stilizat h1 {
+	color: #479286; /* Culoarea textului */
+	font-size: 24px; /* Dimensiunea textului */
+	font-weight: bold; /* Stil bold */
+  }
+  
+  /* Stilurile pentru paragrafe */
+  .text-stilizat p {
+	color: #808080; /* Culoarea textului */
+	font-size: 16px; /* Dimensiunea textului */
+	font-style: italic; /* Stil italic */
+  }
+  
+  .date-contact p {
+	margin: 5px 0;
+  }
+  
+  .social-icons {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+  }
+  
+  .social-icons a {
+	margin-right: 10px;
+	color: #333;
+	font-size: 20px;
+  }
+
+  
+  
+  
+  
+  
