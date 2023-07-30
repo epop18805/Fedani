@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Galerie cu poze</title>
+  <link rel="stylesheet" type="text/css" href="galerie.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+</head>
+<body>
+  <header class="top-banner">
+    <div class="banner-content">
+      <h1>Fashion meets soul</h1>
+      <p>Anamaria Sut - Fashion Designer</p>
+      <div id="audioPlayerContainer">
+        <audio id="audioPlayer" controls autoplay loop>
+          <source src="Guitar.mp4" type="audio/mpeg">
+          Your browser does not support the audio element.
+        </audio>
+        <div class="audio-play-button"></div>
+      </div>
+    </div>
+  </header>
+
+  <header>
+    <a href="galerie Ani.html" target="_blank">
+      <img src="Header6.jpg" alt="Header Image">
+    </a>
+    <nav>
+      <a href="despre.html"><b class="sparkle">Despre mine</b></a> |
+      <a href="galerie.html"><b class="sparkle">Galerie</b></a> |
+      <a href="Servicii si preturi.html"><b class="sparkle">Servicii si preturi</b></a> |
+      <a href="plaseaza o comanda.html"><b class="sparkle">Plaseaza o comanda</b></a> |
+      <a href="contact.html"><b class="sparkle">Contact</b></a>
+    </nav>
+  </header>
+
+  <h2>Galerie</h2>
+
+  <div class="gallery">
+    <div class="image" onclick="openModal(0)">
+      <a href="despre.html">
+        <img src="Ani4.jpg" alt="Imagine 1">
+      </a>
+      <div class="description">Descriere poza 1</div>
+    </div>
+    <div class="image" onclick="openModal(1)">
+      <a href="despre.html">
+        <img src="Ani23.jpg" alt="Imagine 2">
+      </a>
+      <div class="description">Descriere poza 2</div>
+    </div>
+    <!-- Adaugă alte imagini cu descriere și link aici -->
+  </div>
+
+  <script src="galerie.js"></script>
+</body>
+</html>

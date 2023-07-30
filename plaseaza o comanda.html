@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Plaseaza o comanda</title>
+  <link rel="stylesheet" type="text/css" href="plaseaza o comanda.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+</head>
+<body>
+  <header class="top-banner">
+    <div class="banner-content">
+      <h1>Fashion meets soul</h1>
+      <p>Anamaria Sut - Fashion Designer</p>
+      <div id="audioPlayerContainer">
+        <audio id="audioPlayer" controls autoplay loop>
+          <source src="Guitar.mp4" type="audio/mpeg">
+          Your browser does not support the audio element.
+        </audio>
+        <div class="audio-play-button"></div>
+      </div>
+    </div>
+  </header>
+
+  <header>
+    <a href="galerie Ani.html" target="_blank">
+      <img src="Header6.jpg" alt="Header Image">
+    </a>
+
+    <nav>
+      <a href="despre.html" ><b class="sparkle">Despre mine</b></a> |&nbsp; &nbsp;
+      <a href="galerie.html" ><b class="sparkle">Galerie</b></a> |&nbsp; &nbsp;
+      <a href="Servicii si preturi.html" ><b class="sparkle">Servicii si preturi</b></a> |&nbsp; &nbsp;
+      <a href="plaseaza o comanda.html" ><b class="sparkle">Plaseaza o comanda</b></a> |&nbsp; &nbsp;
+      <a href="contact.html" ><b class="sparkle">Contact</b></a> &nbsp; &nbsp;
+    </nav>
+  </header> 
+
+  <div class="page-container">
+    <div class="contact-form">
+      <h1> Plaseaza o comanda </h1>
+      <form method="post" action="send_message.php">
+        <input type="text" name="name" placeholder="Nume" required>
+        <input type="email" name="email" placeholder="Email" required>
+
+        <label for="produs">Articole:</label>
+        <select id="produs" required onchange="updateMarimeOptions()">
+          <option value="" disabled selected>Selectează Articolul</option>
+          <option value="Rochie casual">Rochie casual</option>
+          <option value="Rochie de seara">Rochie de seara</option>
+          <option value="Costum de barbati">Costum de barbati</option>
+          <option value="Tricou">Tricou</option>
+          <option value="Pantaloni">Pantaloni</option>
+          <option value="Set Mama-Fiica">Set Mama-Fiica</option>
+          <option value="Palarii">Palarii</option>
+          <option value="Bijuterii">Bijuterii</option>
+          <option value="Incaltaminte usoara">Incaltaminte usoara</option>
+          <option value="Confectionari IE">Confectionari IE</option>
+          <option value="Reparat articole">Reparat articole</option>
+          <option value="Modificat articole">Modificat articole</option>
+          <option value="Tiv">Tiv</option>
+          <option value="Stramtat">Stramtat</option>
+          <option value="Papioane">Papioane</option>
+          <option value="Brosa Lips">Brosa Lips</option>
+          <option value="Costum Teatru">Costum Teatru</option>
+          <option value="Accesorii Teatru">Accesorii Teatru</option>
+          <option value="Accesorii copii">Accesorii copii</option>
+          <option value="Accesorii Par">Accesorii Par</option>
+          <option value="Diverse">Diverse</option>
+        </select>
+
+        <label for="marime">Marime:</label>
+        <select id="marime">
+          <option value="" disabled selected>Selectează Marimea (Optional)</option>
+        </select> 
+
+        <textarea name="message" placeholder="Mesaj" required style="height: 97px;width: 581px;"></textarea><br><br>
+        <input type="submit" value="Trimite">
+      </form>
+    </div>
+</div>
+
+<script>
+	function updateMarimeOptions() {
+	  var produsSelect = document.getElementById("produs");
+	  var marimeSelect = document.getElementById("marime");
+	  var marimeLabel = document.querySelector("label[for='marime']");
+	  var selectedProdus = produsSelect.value;
+	
+	  // Stergem toate optiunile curente din selectul de marime
+	  marimeSelect.innerHTML = "";
+	
+	  // Daca produsul selectat este "Incaltaminte usoara"
+	  // adaugam doar optiunile specifice
+	  if (selectedProdus === "Incaltaminte usoara") {
+		var marimi = ["35", "36", "37", "38", "39", "40", "41", "42", "43", "44", "45"];
+		for (var i = 0; i < marimi.length; i++) {
+		  var option = document.createElement("option");
+		  option.value = marimi[i];
+		  option.innerText = marimi[i];
+		  marimeSelect.appendChild(option);
+		}
+	  }
+	  // Daca produsul selectat este "Rochie de seara", "Rochie casual", "Costum de barbati", etc.
+	  // adaugam doar opțiunile specifice pentru rochie de seara
+	  else if (
+		selectedProdus === "Rochie de seara" ||
+		selectedProdus === "Rochie casual" ||
+		selectedProdus === "Costum de barbati" ||
+		selectedProdus === "Tricou" ||
+		selectedProdus === "Pantaloni" ||
+		selectedProdus === "Set Mama-Fiica" ||
+		selectedProdus === "Confectionari IE" ||
+		selectedProdus === "Costum Teatru"
+	  ) {
+		var marimiRochieSeara = ["XS", "S", "M", "L", "XL", "XXL", "Extra Large"];
+		for (var i = 0; i < marimiRochieSeara.length; i++) {
+		  var option = document.createElement("option");
+		  option.value = marimiRochieSeara[i];
+		  option.innerText = marimiRochieSeara[i];
+		  marimeSelect.appendChild(option);
+		}
+	  } else {
+		// Daca produsul selectat este orice alt articol decat cele specificate
+		var option = document.createElement("option");
+		option.disabled = true;
+		option.selected = true;
+		option.innerText = "Selectează Marimea (Optional)";
+		marimeSelect.appendChild(option);
+	  }
+	  
+	  // Ascundem câmpul "Marime" și eticheta "Marime" dacă articolul este unul dintre cele specificate
+	  if (
+		selectedProdus === "Palarii" ||
+		selectedProdus === "Bijuterii" ||
+		selectedProdus === "Papioane" ||
+		selectedProdus === "Brosa Lips" ||
+		selectedProdus === "Accesorii Teatru" ||
+		selectedProdus === "Accesorii copii" ||
+		selectedProdus === "Accesorii Par"||
+		selectedProdus === "Reparat articole" ||
+		selectedProdus === "Modificat articole" ||
+		selectedProdus === "Tiv" ||
+		selectedProdus === "Stramtat" ||
+		selectedProdus === "Diverse" 
+		
+	  ) {
+		marimeSelect.style.display = "none";
+		marimeLabel.style.display = "none";
+	  } else {
+		marimeSelect.style.display = "block";
+		marimeLabel.style.display = "block";
+	  }
+	}
+
+	// Apelam functia initial pentru a afisa/opti ascunde câmpul "Marime"
+	updateMarimeOptions();
+  </script>
+	
+</body>
+</html>
+
+

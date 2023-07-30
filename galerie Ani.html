@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Galerie Ani</title>
+  <link rel="stylesheet" type="text/css" href="galerie Ani.css">
+</head>
+<body>
+
+
+	
+  <h2>Galerie Ani</h2>
+  
+  <div class="gallery">
+    <div class="image" onclick="openModal(0)">
+      <img src="Ani1.jpg" alt="Imagine 1">
+    </div>
+    <div class="image" onclick="openModal(1)">
+      <img src="Ani3.jpg" alt="Imagine 2">
+    </div>
+    <div class="image" onclick="openModal(2)">
+      <img src="Ani5.jpg" alt="Imagine 3">
+    </div>
+    <div class="image" onclick="openModal(0)">
+		<img src="Ani6.jpg" alt="Imagine 1">
+	  </div>
+	  <div class="image" onclick="openModal(1)">
+		<img src="Ani8.jpg" alt="Imagine 2">
+	  </div>
+	  <div class="image" onclick="openModal(2)">
+		<img src="Ani9.jpg" alt="Imagine 3">
+	  </div>    
+	  <div class="image" onclick="openModal(0)">
+		<img src="Ani10.jpg" alt="Imagine 1">
+	  </div>
+	  <div class="image" onclick="openModal(1)">
+		<img src="Ani11.jpg" alt="Imagine 2">
+	  </div>
+	  <div class="image" onclick="openModal(2)">
+		<img src="Ani12.jpg" alt="Imagine 3">
+	  </div>
+	  <div class="image" onclick="openModal(0)">
+		<img src="Ani13.jpg" alt="Imagine 1">
+	  </div>
+	  <div class="image" onclick="openModal(1)">
+		<img src="Ani14.jpg" alt="Imagine 2">
+	  </div>
+	  <div class="image" onclick="openModal(2)">
+		<img src="Ani15.jpg" alt="Imagine 3">
+	  </div>
+	  <div class="image" onclick="openModal(0)">
+		<img src="Ani16.jpg" alt="Imagine 1">
+	  </div>
+	  <div class="image" onclick="openModal(1)">
+		<img src="Ani17.jpg" alt="Imagine 2">
+	  </div>
+	  <div class="image" onclick="openModal(2)">
+		<img src="Ani18.jpg" alt="Imagine 3">
+	  </div>
+	  <div class="image" onclick="openModal(0)">
+		<img src="Ani19.jpg" alt="Imagine 1">
+	  </div>
+	  <div class="image" onclick="openModal(1)">
+		<img src="Ani20.jpg" alt="Imagine 2">
+	  </div>
+	  <div class="image" onclick="openModal(2)">
+		<img src="Ani21.jpg" alt="Imagine 3">
+	  </div>
+	  <div class="image" onclick="openModal(0)">
+		<img src="Ani22.jpg" alt="Imagine 1">
+	  </div>
+	  <div class="image" onclick="openModal(1)">
+		<img src="Ani26.jpg" alt="Imagine 2">
+	  </div>
+	  <div class="image" onclick="openModal(2)">
+		<img src="Ani31.jpg" alt="Imagine 3">
+	  </div>
+	  <div class="image" onclick="openModal(0)">
+		<img src="Ani32.jpg" alt="Imagine 1">
+	  </div>
+	  <div class="image" onclick="openModal(1)">
+		<img src="Ani33.jpg" alt="Imagine 2">
+	  </div>
+	  <div class="image" onclick="openModal(2)">
+		<img src="Ani50.jpg" alt="Imagine 3">
+	  </div>
+	  <div class="image" onclick="openModal(1)">
+		<img src="Ani169.jpg" alt="Imagine 2">
+	  </div>
+	  
+  </div>
+
+  <div id="myModal" class="modal" onclick="closeModal()">
+    <div class="modal-content" onclick="event.stopPropagation();">
+      <span class="close" onclick="closeModal()">&times;</span>
+      <span class="prev" onclick="changeImage(-1)">&lt;</span>
+      <img class="modal-image" src="" alt="Imagine mare">
+      <span class="next" onclick="changeImage(1)">&gt;</span>
+    </div>
+  </div>
+
+  <script src="galerie Ani.js"></script>
+</body>
+</html>

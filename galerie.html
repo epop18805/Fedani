@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Galerie cu poze</title>
+  <link rel="stylesheet" type="text/css" href="galerie.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+</head>
+<body>
+  <header class="top-banner">
+    <div class="banner-content">
+      <h1>Fashion meets soul</h1>
+      <p>Anamaria Sut - Fashion Designer</p>
+      <div id="audioPlayerContainer">
+        <audio id="audioPlayer" controls autoplay loop>
+          <source src="Guitar.mp4" type="audio/mpeg">
+          Your browser does not support the audio element.
+        </audio>
+        <div class="audio-play-button"></div>
+      </div>
+    </div>
+  </header>
+
+  <header>
+    <a href="galerie Ani.html" target="_blank">
+      <img src="Header6.jpg" alt="Header Image">
+    </a>
+    <nav>
+      <a href="despre.html"><b class="sparkle">Despre mine</b></a> |
+      <a href="galerie.html"><b class="sparkle">Galerie</b></a> |
+      <a href="Servicii si preturi.html"><b class="sparkle">Servicii si preturi</b></a> |
+      <a href="plaseaza o comanda.html"><b class="sparkle">Plaseaza o comanda</b></a> |
+      <a href="contact.html"><b class="sparkle">Contact</b></a>
+    </nav>
+  </header>
+
+  <h2>Galerie</h2>
+
+  <div class="gallery">
+    <div class="image" onclick="openModal(0)">
+      <a href="Prezentari  Defilari.html">
+        <img src="Category1.png" alt="Prezentari Defilari">
+      </a>
+      <div class="description">Prezentari Defilari</div>
+    </div>
+    <div class="image" onclick="openModal(1)">
+      <a href="Papioane.html">
+        <img src="Category2.png" alt="Papioane">
+      </a>
+      <div class="description">Papioane</div>
+    </div>
+	<div class="image" onclick="openModal(1)">
+		<a href="Accesorii par.html">
+		  <img src="Category3.png" alt="Accesorii par">
+		</a>
+		<div class="description">Accesorii par</div>
+	  </div>
+	  <div class="image" onclick="openModal(1)">
+		<a href="Costume.html">
+		  <img src="Category4.png" alt="Costume">
+		</a>
+		<div class="description">Costume</div>
+	  </div>
+	  <div class="image" onclick="openModal(1)">
+		<a href="Mama Fiica.html">
+		  <img src="Category5.png" alt="Mama Fiica">
+		</a>
+		<div class="description">Mama Fiica</div>
+	  </div>
+	  <div class="image" onclick="openModal(1)">
+		<a href="Diverse.html">
+		  <img src="Category6.png" alt="Diverse">
+		</a>
+		<div class="description">Diverse</div>
+	  </div>
+
+ 
+  </div>
+
+  <script src="galerie.js"></script>
+</body>
+</html>
